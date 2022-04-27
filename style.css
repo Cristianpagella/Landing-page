@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Ubuntu:ital,wght@1,500&display=swap');
 
 :root {
+
     --dark-blue: #007ea7;
-    --white:  #ccc5b9 ;
-    --font-family: "Montserrat";
+    --white: #ccc5b9; 
+    --font-family:"Montserrat", sans-serif;
+    --font-familys:"Ubuntu", sans-serif ; 
     --padding-x:100px
 }
 
@@ -12,6 +15,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+* img {
+    width: 100%;
+    height: auto;
+  }
 
 .navbar {
     height: 80px;
@@ -68,3 +75,80 @@
     color: var(--white);
     font-family: var(--font-family);
 }
+
+/*****************************************section hero ******************************************************/
+
+
+
+.section-hero {
+    display: grid;
+    background-color: var(--dark-blue);
+}
+
+@media (min-width: 768px) { 
+    .section-hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background:linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+}
+.section-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-familys);
+    color: black;
+    gap: 2rem;
+}
+
+.section-botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .section-botones {
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+.section-botones a{
+    background-color: aqua;
+    padding: .8rem;
+    border-radius: 1rem;
+    transition: .3s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.section-botones a:hover {
+    background-color:#007ea7;
+}
+
+.quienes_somos_texto {
+    text-align: center;
+    font-family: var(--font-familys);
+}
+
+@media (min-width: 768px) { 
+    .quienes_somos_texto {
+        text-align: center;
+        margin: 0 20rem;
+    }
+}
+
+.quienes_somos_texto h1 {
+    margin: 2.5rem 0;
+}
+
+@media (max-width: 768px) { 
+    .quienes_somos_texto h1 {
+        font-size: 2rem;
+    }
+ }
+
+
+
