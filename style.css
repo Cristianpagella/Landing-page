@@ -10,6 +10,7 @@
     --padding-x:100px
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -150,5 +151,63 @@
     }
  }
 
+ /* ejercicio 4 */
+ .description__section {
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-blue);
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 8rem 0;
+    font-family: var(--font-familys);
+  }
+  
+  .description__section h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  .description__section h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: var(--thin);
+    max-width: 300px;
+    margin-bottom: 5rem;
+  }
+  
+  .info-card {
+    width: 40%;
+    margin-bottom: 5rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 07rem 0;
+    padding: 20px;
+}
 
 
+.card__container {
+    display: flex;
+    gap: 15rem;
+  }
+
+
+  .description__section h3 {
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .card__container {
+        display: table-column;
+        gap: 15rem;
+        flex-direction: column;
+      }
+  }    
