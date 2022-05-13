@@ -130,6 +130,9 @@
     background-color:#007ea7;
 }
 
+.Quienes_somos {
+    background-clor: #0f0f0f;
+}
 .quienes_somos_texto {
     text-align: center;
     font-family: var(--font-familys);
@@ -143,7 +146,7 @@
 }
 
 .quienes_somos_texto h1 {
-    margin: 2.5rem 0;
+    margin: 0rem 0rem 2.5rem ;
 }
 
 @media (max-width: 768px) { 
@@ -213,13 +216,14 @@
       }
   }    
 
-/* foooterr */
+/* foooter */
 
-.footer{
-    width: 100;
+footer{
+    width: 100%;
     padding: 50px 0px;
-    background-color: black;
-   }
+    background-size: cover;
+    background-color: #0f0f0f;
+}
 
 .container__footer {
     display: flex;
@@ -228,13 +232,18 @@
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+    font-family: var(--font-familys);
+    background-color: #0f0f0f;
 
+    
 }
 
 .box__footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
+    color: black;
+    
 }
 
 .box__footer .term {
